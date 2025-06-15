@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="lunar.js"></script>
+    </head>
+
+    <body>
+        <h1>
+            <script>
+                var date = Solar.fromDate(new Date());
+                document.write(date.toString());
+                document.write(" 星期")
+                document.write(date.getWeekInChinese());
+            </script>
+        </h1>
+        <ul>
+            <li>
+                <h2>宜：</h2>
+                <script>
+                    var date = Lunar.fromDate(new Date());
+                    document.write(date.getDayYi());
+                </script>
+            </li>
+            <li>
+                <h2>忌：</h2>
+                <script>
+                    document.write(date.getDayJi());
+                </script>
+            </li>
+        </ul>
+    </body>
+</html>

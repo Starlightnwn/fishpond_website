@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fishpond</title>
+    </head>
+    
+    <body>
+        <h1>欢迎来到鱼塘</h1>
+        <h2>welcome to The Fishpond</h2>
+        <p><a href="/starlightnwn/index.html">starlightnwn's site</a></p>
+        <p><a href="https://advan10.top:12333/">mcsmanager-web</a></p>
+        <script src="lunar.js"></script>
+        <script>
+            //当前日期生成农历对象
+            var date = Lunar.fromDate(new Date());
+            document.write("宜："+date.getDayYi());
+            document.write('<br>');
+            document.write("忌："+date.getDayJi());
+        </script>
+    </body>
+</html>
